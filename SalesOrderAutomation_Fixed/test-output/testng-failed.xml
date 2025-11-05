@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [EndToEndSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FullFlow(failed)">
+    <classes>
+      <class name="com.example.tests.PackingTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="pickPackAndShip"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.example.tests.PackingTest -->
+      <class name="com.example.tests.PicklistTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="createPicklist"/>
+        </methods>
+      </class> <!-- com.example.tests.PicklistTest -->
+      <class name="com.example.tests.SalesOrderTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="createOrder"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.example.tests.SalesOrderTest -->
+      <class name="com.example.tests.LoginTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.example.tests.LoginTest -->
+    </classes>
+  </test> <!-- FullFlow(failed) -->
+</suite> <!-- Failed suite [EndToEndSuite] -->

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" > 
+<suite name="EndToEndSuite" verbose="1"> <test name="FullFlow"> 
+<classes> <class name="com.example.tests.LoginTest"/> 
+<class name="com.example.tests.SalesOrderTest"/> 
+<class name="com.example.tests.PicklistTest"/>
+<class name="com.example.tests.PackingTest"/>
+ </classes> 
+ </test>
+ </suite>
