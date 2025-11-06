@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Selenium Test Suite]">
+  <test thread-count="5" name="Complete Flow Test(failed)">
+    <classes>
+      <class name="com.example.tests.InboundShipment">
+        <methods>
+          <include name="tearDown"/>
+          <include name="inboundShipmentTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.example.tests.InboundShipment -->
+    </classes>
+  </test> <!-- Complete Flow Test(failed) -->
+</suite> <!-- Failed suite [Selenium Test Suite] -->
