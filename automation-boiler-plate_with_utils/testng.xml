@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AutomationBoilerplateSuite" verbose="1">
+  <test name="CombinedTests">
+    <classes>
+      <class name="com.example.tests.Outbound"/>
+      <class name="com.example.tests.Inbound"/>
+    </classes>
+  </test>
+</suite>
