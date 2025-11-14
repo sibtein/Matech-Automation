@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-14T14:48:41 PKT" name="AutomationBoilerplateSuite" finished-at="2025-11-14T14:51:35 PKT" duration-ms="173494">
+    <groups>
+      <group name="Regression">
+        <method signature="Outbound.createPicklistTest()[pri:3, instance:com.example.tests.Outbound@35dab4eb]" name="createPicklistTest" class="com.example.tests.Outbound"/>
+        <method signature="Outbound.performPackingTest()[pri:4, instance:com.example.tests.Outbound@35dab4eb]" name="performPackingTest" class="com.example.tests.Outbound"/>
+        <method signature="Outbound.createShipmentTest()[pri:5, instance:com.example.tests.Outbound@35dab4eb]" name="createShipmentTest" class="com.example.tests.Outbound"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="Outbound.loginTest()[pri:1, instance:com.example.tests.Outbound@35dab4eb]" name="loginTest" class="com.example.tests.Outbound"/>
+        <method signature="Outbound.createOrderTest()[pri:2, instance:com.example.tests.Outbound@35dab4eb]" name="createOrderTest" class="com.example.tests.Outbound"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2025-11-14T14:48:41 PKT" name="CombinedTests" finished-at="2025-11-14T14:51:35 PKT" duration-ms="173494">
+      <class name="com.example.tests.Inbound">
+        <test-method signature="inboundShipmentTest()[pri:0, instance:com.example.tests.Inbound@18271936]" started-at="2025-11-14T14:49:31 PKT" name="inboundShipmentTest" finished-at="2025-11-14T14:51:35 PKT" duration-ms="123622" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to exception: Expected condition failed: waiting for visibility of element located by By.cssSelector: [data-bind='shipment-tablesearch'] (tried for 12 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.136, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58144}, goog:processID: 5412, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58144/devtoo..., se:cdpVersion: 142.0.7444.136, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 92304c40114b981a38ff208547638603]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to exception: Expected condition failed: waiting for visibility of element located by By.cssSelector: [data-bind='shipment-tablesearch'] (tried for 12 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.136, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58144}, goog:processID: 5412, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58144/devtoo..., se:cdpVersion: 142.0.7444.136, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 92304c40114b981a38ff208547638603
+at org.testng.Assert.fail(Assert.java:111)
+at com.example.tests.Inbound.inboundShipmentTest(Inbound.java:219)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inboundShipmentTest -->
+      </class> <!-- com.example.tests.Inbound -->
+      <class name="com.example.tests.Outbound">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.example.tests.Outbound@35dab4eb]" started-at="2025-11-14T14:48:31 PKT" name="beforeSuite" finished-at="2025-11-14T14:48:41 PKT" duration-ms="10481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method signature="loginTest()[pri:1, instance:com.example.tests.Outbound@35dab4eb]" started-at="2025-11-14T14:48:41 PKT" name="loginTest" finished-at="2025-11-14T14:49:31 PKT" duration-ms="49696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="createOrderTest()[pri:2, instance:com.example.tests.Outbound@35dab4eb]" started-at="2025-11-14T14:49:31 PKT" name="createOrderTest" finished-at="2025-11-14T14:49:31 PKT" depends-on-methods="com.example.tests.Outbound.loginTest" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrderTest -->
+        <test-method signature="createPicklistTest()[pri:3, instance:com.example.tests.Outbound@35dab4eb]" started-at="2025-11-14T14:49:31 PKT" name="createPicklistTest" finished-at="2025-11-14T14:49:31 PKT" depends-on-methods="com.example.tests.Outbound.createOrderTest" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPicklistTest -->
+        <test-method signature="performPackingTest()[pri:4, instance:com.example.tests.Outbound@35dab4eb]" started-at="2025-11-14T14:49:31 PKT" name="performPackingTest" finished-at="2025-11-14T14:49:31 PKT" depends-on-methods="com.example.tests.Outbound.createPicklistTest" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performPackingTest -->
+        <test-method signature="createShipmentTest()[pri:5, instance:com.example.tests.Outbound@35dab4eb]" started-at="2025-11-14T14:49:31 PKT" name="createShipmentTest" finished-at="2025-11-14T14:49:31 PKT" depends-on-methods="com.example.tests.Outbound.performPackingTest" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createShipmentTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.example.tests.Outbound@35dab4eb]" started-at="2025-11-14T14:51:35 PKT" name="afterSuite" finished-at="2025-11-14T14:51:36 PKT" duration-ms="1265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.example.tests.Outbound -->
+    </test> <!-- CombinedTests -->
+  </suite> <!-- AutomationBoilerplateSuite -->
+</testng-results>
